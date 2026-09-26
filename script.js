@@ -1,0 +1,1 @@
+const tabs=document.querySelectorAll('.semester');const panels=document.querySelectorAll('.semester-panel');tabs.forEach(t=>t.addEventListener('click',()=>{tabs.forEach(x=>x.classList.remove('active'));panels.forEach(x=>x.classList.remove('active'));t.classList.add('active');document.getElementById(t.dataset.sem).classList.add('active')}));
